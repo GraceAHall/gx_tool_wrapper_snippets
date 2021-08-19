@@ -1,9 +1,14 @@
 
 from Cheetah.Template import Template
 
+
+########################################################
+########## text param value to R string array ##########
+########################################################
+
 rstringarray_snippet = """
 
-## --------- function definition --------- ##
+## --------- function --------- ##
 
 #def text_to_rstringarray($text)
     #set $list = $text.strip().rstrip(',').split(',')
@@ -27,8 +32,8 @@ rstringarray_snippet = """
     
 #end def
 
-## --------- calling function --------- ##
-## when using in a galaxy tool wrapper, pass $param.value to $text_to_rstringarray, rather than just $param. 
+## --------- example usage --------- ##
+## [NOTE] when using in a galaxy tool wrapper, pass $param.value to $text_to_rstringarray, rather than just $param. 
 
 Text to R string array example:
 #set $my_text_param_value = ", factor xa, thrombin, ,   , trypsin,thermolysin,"
