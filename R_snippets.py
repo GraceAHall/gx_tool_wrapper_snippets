@@ -1,6 +1,9 @@
 
 from Cheetah.Template import Template
 
+## [NOTE] run this file as a python program to view the example cases.
+## Cheetah will compile the template then run, and will print its output to your shell.
+
 
 ########################################################
 ########## text param value to R string array ##########
